@@ -1,0 +1,439 @@
+{
+    margin: 0;
+    padding : 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+
+    text-align: center;
+    font-family:Arial, sans-serif
+}
+
+
+.head {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background: black;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+}
+
+.navbar {
+
+    display: flex;
+    margin-right: 30px;
+
+}
+
+.logo {
+    margin-left: 100px;
+}
+
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.navbar a:hover {
+    background: #9EABAB;
+
+}
+
+header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    height: 60vh !important;
+    background: url(res/gameusheader.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 100px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: white;
+    padding: 0 50px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #2F3333;
+    color:white;
+    text-decoration: none;
+    background: #2F3333;
+}
+
+.btn:hover {
+    background: none;
+
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px
+}
+
+.content {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sau {
+    padding: 25px;
+    background: black;
+    background-size: cover;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.box-container .box {
+    display: flex;
+    justify-content: space-between;
+    height: 11rem;
+    width: 17rem;
+    background: #2F3333;
+    text-align: justify;
+    box-shadow: 0 .2rem 5rem rgba(0, 0, 0, .5);
+    margin: 1rem;
+    transition: transform 0.5s ease;
+}
+
+.box-container .box info1 {
+    height: 300px;
+    width: 200px;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 20%;
+    color: white;
+    background-color: #2F3333;
+    font-size: 2rem;
+    margin: 1rem 0;
+    flex-shrink: 0;
+    display: none;
+    position: fixed;
+}
+
+.box-container .box info2 {
+    height: 300px;
+    width: 200px;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 20%;
+    color: white;
+    background-color: #2F3333;
+    font-size: 2rem;
+    margin: 1rem 0;
+    flex-shrink: 0;
+    display: block;
+    position: fixed;
+}
+
+.box-container .box info3 {
+    height: 300px;
+    width: 200px;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 20%;
+    color: white;
+    background-color: #2F3333;
+    font-size: 2rem;
+    margin: 1rem 0;
+    flex-shrink: 0;
+    display: block;
+    position: fixed;
+}
+
+.box-container .box info4 {
+    height: 300px;
+    width: 200px;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 20%;
+    color: white;
+    background-color: #2F3333;
+    font-size: 2rem;
+    margin: 1rem 0;
+    flex-shrink: 0;
+    display: block;
+    position: fixed;
+}
+
+.box-container .box info5 {
+    height: 300px;
+    width: 200px;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 20%;
+    color: white;
+    background-color: #2F3333;
+    font-size: 2rem;
+    margin: 1rem 0;
+    flex-shrink: 0;
+    display: block;
+    position: fixed;
+}
+
+.arrow {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    cursor: pointer;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
+
+.about {
+    background: black;
+    background-size: cover;
+    color: white;
+
+}
+
+.price {
+    background: url(res/gameus2.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact {
+    padding-top: 20px;
+    background: black;
+    padding-bottom: 0;
+}
+
+h3 img {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+h2 img {
+    width: 300px;
+    height: 250px;
+    padding-top: 20px;
+}
+
+a img {
+    width: 64px;
+    height: 64px;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    background: black;
+    color: #007bff;
+}
+
+
+.content sau .box amigo1 {
+    height: 200px;
+    width: 100px;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 20%;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    margin: 1rem 0;
+    flex-shrink: 0;
+    display: none;
+    position: absolute;
+}
+
+.content sau .box amigo2 {
+    height: 200px;
+    width: 100px;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 20%;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    margin: 1rem 0;
+    flex-shrink: 0;
+    display: none;
+    position: fixed;
+}
+
+.content sau .box amigo3 {
+    height: 200px;
+    width: 100px;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 20%;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    margin: 1rem 0;
+    flex-shrink: 0;
+    display: none;
+    position: fixed;
+    border: black;
+}
+
+
+.container {
+    display: flex;
+}
+
+.contactos, .chat {
+    flex: 1;
+    padding: 20px;
+}
+
+.contactos {
+    border-right: 1px solid #ccc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+ul li:hover {
+    background-color: #f0f0f0;
+}
+
+.chat {
+    overflow-y: auto;
+}
+
+.mensajes {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+}
+
+.formulario-mensaje {
+    display: flex;
+    align-items: center;
+}
+
+.formulario-mensaje input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.formulario-mensaje button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.formulario-mensaje button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 120vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+}

@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>scryptflecha.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #cf8e6d;}
+.s4 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+scryptflecha.js</font>
+</center></td></tr></table>
+<pre><span class="s0">document</span><span class="s1">.</span><span class="s0">addEventListener</span><span class="s1">(</span><span class="s2">&quot;DOMContentLoaded&quot;</span><span class="s1">, </span><span class="s3">function</span><span class="s1">() {</span>
+    <span class="s3">const </span><span class="s0">arrows </span><span class="s1">= </span><span class="s0">document</span><span class="s1">.</span><span class="s0">querySelectorAll</span><span class="s1">(</span><span class="s2">'.arrow'</span><span class="s1">);</span>
+    <span class="s3">const </span><span class="s0">contents </span><span class="s1">= </span><span class="s0">document</span><span class="s1">.</span><span class="s0">querySelectorAll</span><span class="s1">(</span><span class="s2">'.info'</span><span class="s1">);</span>
+
+    <span class="s3">let </span><span class="s0">currentIndex </span><span class="s1">= </span><span class="s4">0</span><span class="s1">;</span>
+
+    <span class="s0">arrows</span><span class="s1">.</span><span class="s0">forEach</span><span class="s1">(</span><span class="s0">arrow </span><span class="s1">=&gt; {</span>
+        <span class="s0">arrow</span><span class="s1">.</span><span class="s0">addEventListener</span><span class="s1">(</span><span class="s2">'click'</span><span class="s1">, () =&gt; {</span>
+            <span class="s3">if </span><span class="s1">(</span><span class="s0">arrow</span><span class="s1">.</span><span class="s0">classList</span><span class="s1">.</span><span class="s0">contains</span><span class="s1">(</span><span class="s2">'left'</span><span class="s1">)) {</span>
+                <span class="s0">currentIndex </span><span class="s1">= (</span><span class="s0">currentIndex </span><span class="s1">=== </span><span class="s4">0</span><span class="s1">) ? </span><span class="s0">contents</span><span class="s1">.</span><span class="s0">length </span><span class="s1">- </span><span class="s4">1 </span><span class="s1">: </span><span class="s0">currentIndex </span><span class="s1">- </span><span class="s4">1</span><span class="s1">;</span>
+            <span class="s1">} </span><span class="s3">else </span><span class="s1">{</span>
+                <span class="s0">currentIndex </span><span class="s1">= (</span><span class="s0">currentIndex </span><span class="s1">=== </span><span class="s0">contents</span><span class="s1">.</span><span class="s0">length </span><span class="s1">- </span><span class="s4">1</span><span class="s1">) ? </span><span class="s4">0 </span><span class="s1">: </span><span class="s0">currentIndex </span><span class="s1">+ </span><span class="s4">1</span><span class="s1">;</span>
+            <span class="s1">}</span>
+            <span class="s0">updateContent</span><span class="s1">();</span>
+        <span class="s1">});</span>
+    <span class="s1">});</span>
+
+    <span class="s3">function </span><span class="s0">updateContent</span><span class="s1">() {</span>
+        <span class="s0">contents</span><span class="s1">.</span><span class="s0">forEach</span><span class="s1">((</span><span class="s0">content</span><span class="s1">, </span><span class="s0">index</span><span class="s1">) =&gt; {</span>
+            <span class="s3">if </span><span class="s1">(</span><span class="s0">index </span><span class="s1">=== </span><span class="s0">currentIndex</span><span class="s1">) {</span>
+                <span class="s0">content</span><span class="s1">.</span><span class="s0">classList</span><span class="s1">.</span><span class="s0">add</span><span class="s1">(</span><span class="s2">'active'</span><span class="s1">);</span>
+            <span class="s1">} </span><span class="s3">else </span><span class="s1">{</span>
+                <span class="s0">content</span><span class="s1">.</span><span class="s0">classList</span><span class="s1">.</span><span class="s0">remove</span><span class="s1">(</span><span class="s2">'active'</span><span class="s1">);</span>
+            <span class="s1">}</span>
+        <span class="s1">});</span>
+    <span class="s1">}</span>
+<span class="s1">});</span>
+
+</pre>
+</body>
+</html>
